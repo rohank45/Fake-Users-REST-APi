@@ -7,6 +7,9 @@ app.use(express.urlencoded({ extended: true }));
 
 require("./config/database").call();
 
+const cors = require("cors");
+app.use(cors());
+
 const home = require("./router/home");
 app.use("/", home);
 
