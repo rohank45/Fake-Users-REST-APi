@@ -13,9 +13,6 @@ app.use("/", home);
 const PostRoute = require("./router/addUsers");
 app.use("/", PostRoute);
 
-const getUsers = require("./router/getUsers");
-app.use("/", getUsers);
-
 const editUser = require("./router/editUser");
 app.use("/", editUser);
 
